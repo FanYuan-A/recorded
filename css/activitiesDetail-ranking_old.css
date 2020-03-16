@@ -1,0 +1,134 @@
+.warp {
+  width: 100%;
+  background: url("../images/ranking-bg.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100% 100%;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.warp > h1 {
+  padding-top: 2.8rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: .3rem;
+  font-weight: 500;
+}
+.w {
+  width:100%;
+  padding: 0 .13rem;
+}
+
+.time {
+  text-align: center;
+  background: #ffffff;
+  color: #010101;
+  font-size: .16rem;
+  position: relative;
+  padding: .17rem 0;
+  -webkit-border-radius: .07rem;
+  -moz-border-radius: .07rem;
+  border-radius: .07rem;
+  margin-bottom: .2rem;
+}
+
+.time span {
+  padding: .08rem .38rem;
+  position: absolute;
+  top: -.20rem;
+  left: 45%;
+  margin-left: -.5rem;
+  display: block;
+  background: url("../images/ranking-btn.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.text .title {
+  padding: .077rem 0;
+  background: url(../images/ranking-btn2.png) no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  text-align: center;
+  position: relative;
+  color:#FFFFFF;
+}
+.row{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+   top:0.15rem;
+   font-size:0.16rem;
+   font-family:PingFang-SC-Bold;
+}
+.row>i{
+  font-size:.2rem;
+  display: block;
+  position: relative;
+  /* bottom:0.2rem;
+  left:0rem; */
+  line-height: .16rem;
+  padding:0 .1rem;
+}
+.row>p{
+   font-size: .09rem;
+   display: block;
+   line-height: .19rem;
+  
+}
+.text .title img {
+  width: 90%;
+  display: inline-block;
+  position: absolute;
+  left: .2rem;
+  top: .1rem;
+}
+.btn3img{
+  height:5rem;
+}
+.content {
+  width: 92%;
+  text-align: center;
+  margin-top: .13rem;
+  position: relative;
+  display: inline-block;
+  left: .17rem;
+}
+.content img{
+
+}
+.t {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: .14rem;
+  color: #36C390;
+  text-align: center;
+  padding-top: .2rem;
+}
+.t> p{
+  line-height: .2rem;
+}
+.t > i{
+  font-size: .2rem;
+  margin-top: .1rem;
+  display: block;
+}
+.t > .b>b,.footer-text {
+  font-size: .08rem;
+  font-weight: normal;
+  display: block;
+  text-align: center;
+}
+.footer-text {
+  /*margin: .3rem;*/
+  color: #ffffff;
+  padding: .2rem 0;
+}
+.t > .b{
+  margin-top:.15rem;
+}

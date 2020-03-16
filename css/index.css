@@ -1,0 +1,124 @@
+.warp {
+  width: 100%;
+  background: #fff;
+}
+
+.top, .bottom {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.top span {
+  line-height: .15rem;
+  padding: .14rem .32rem;
+  display: block;
+  color: #ffffff;
+  font-family: "PingFang-SC-Heavy";
+  font-size: .1rem;
+  position: absolute;
+  bottom: .9rem;
+  left: 50%;
+  margin-left: -.6rem;
+  background: url("../images/top-icon.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.top span i {
+  font-size: .13rem;
+}
+.notice {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: .24rem;
+  line-height: .24rem;
+  /*background: #A9FACE;*/
+  background: rgba(169,250,206,.5);
+  
+}
+.notice li b{
+  width: 100%;
+  padding-left: .24rem;
+  color: #ffffff;
+  background: url("../images/top-icon1.png") no-repeat .1rem center;
+  -webkit-background-size: 5%;
+  background-size: 5%;
+  text-align: center;
+  font-weight: normal;
+  font-size: .1rem;
+  display: block;
+  -webkit-transform: all 1s linear;
+}
+.notice li p {
+  font-weight: bold;
+  display: inline-block;
+  padding-left: .05rem;
+}
+.middle {
+  width: 1.6rem;
+  position: absolute;
+  top: -.1rem;
+  left: 1rem;
+}
+
+.middle-text {
+  padding: .4rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5rem;
+  text-align: center;
+  background: url("../images/bottom-icon.png") no-repeat center center;
+  -webkit-background-size: 95%;
+  background-size: 95%;
+}
+
+.middle-text p {
+  font-size: .1rem;
+  line-height: .17rem;
+  padding-left: .2rem;
+  color: #333131fa;
+}
+
+.middle-text p.title {
+  font-size: .12rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.middle-btn {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 50%;
+  margin-left: -.75rem;
+  text-align: center;
+  padding: .1rem .2rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(to bottom , #47D487, #16B990);
+}
+.middle-btn span {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.middle-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: .05rem;
+  color: #ffffff;
+  text-align: center;
+}
+.middle-bottom p {
+  font-size: .05rem;
+}
+.bottom {
+  top: -.8rem;
+
+}
