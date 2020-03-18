@@ -11,6 +11,13 @@ img {
 }
 .nav-box{
   border-radius:0 0 .1rem .1rem;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:1;
+  background: #fff;
+  width:100%;
+  box-shadow:0 .01rem .14rem 0 #DCEAF5;
 }
 .packUp{
   text-align: center;
@@ -58,7 +65,7 @@ img {
    /* appearance: none;  
   -moz-appearance: none;  
   -webkit-appearance: none;  */
-  
+
 }
 .navSelect{
   display: flex;
@@ -91,7 +98,7 @@ img {
   display: inline-block;
 }
 .course-box{
-  padding:0 .12rem;
+  padding:1.25rem .12rem .66rem;
 }
 .course-box .courseItem{
   background-color:#fff ;
@@ -100,6 +107,14 @@ img {
   padding: .22rem .18rem .13rem;
   color:#A4AAB3;
   margin-top:.1rem;
+  position: relative;
+}
+.course-box .courseItem .siftTag{
+  width:.35rem;
+  height:.35rem;
+  position: absolute;
+  top:0;
+  right:0;
 }
 .course-box .courseItemTitle{
   font-size: .18rem;
@@ -115,12 +130,74 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  width:100%;
+
+}
+.buyBtn{
+  border-radius: .15rem;
+  font-size: .13rem;
+  width:.66rem;
+  height:.28rem;
+  line-height: .28rem;
+  font-weight: 500;
+  text-align: center;
+}
+.buyBtn b{
+  border-radius: 50%;
+  color:#fff;
+  display: inline-block;
+  width:.14rem;
+  height:.14rem;
+  font-size: .14rem;
+  line-height:.14rem;
+  margin-right: .04rem;
+  box-sizing: border-box;
+}
+.courseDel{
+  background-color:rgba(164,170,179,0.14);
+  color:#838FA2;
+}
+.courseDel b{
+  background-color:rgba(131,143,162,1);;
+}
+.courseAdd{
+  background: rgba(255,116,21,.1);
+  color:#FF8B18;
+}
+.courseAdd b{
+  background: rgba(255,116,21,0.8);
+
+}
+.courseItemTeacherList{
+  display: flex;
+  width:52%;
+  overflow: hidden;
+  justify-content: space-between;
+
+}
+.courseItemTeacherList li{
+  width:23%;
 }
 .course-box .courseItemInfo .courseItemTeacherList .CIT-teacherAvatar{
   width:.32rem;
   height:.32rem;
   border-radius: 50%;
   overflow: hidden;
+  margin:0 auto;
+  position: relative;
+}
+.course-box .courseItemInfo .courseItemTeacherList .CIT-teacherAvatar .avatarMask{
+  position: absolute;
+  top:0;
+  left:0;
+  background:red;
+  width:.32rem;
+  height:.32rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height:.32rem;
+  color:#fff;
+  background-color:rgba(13,19,26,0.4);
 }
 .course-box .courseItemInfo .courseItemTeacherList .CIT-teacherName{
   font-size: .1rem;
@@ -129,12 +206,134 @@ img {
   text-overflow:ellipsis;
   white-space: nowrap;
   width:.4rem;
+  margin-top: .06rem;
 }
 .priceSpecialTag{
-
+  background:linear-gradient(315deg,rgba(108,90,255,.8) 0%,rgba(146,116,255,.8) 100%);
+  background:-webkit-linear-gradient(315deg,rgba(108,90,255,.8) 0%,rgba(146,116,255,.8) 100%);
+  border-radius:5px 5px 5px 0px;
+  opacity:0.8;
+  display: inline-block;
+  font-size: .1rem;
+  color:#fff;
+  padding:.05rem .06rem;
 }
-
-
+.priceDetail{
+  color:#FF8B18;
+  font-weight: 500;
+  font-size: .18rem;
+}
+.priceDetail span{
+  color:#4B4B5B;
+  font-weight: 500;
+  font-size: .14rem;
+  font-weight: 400;
+}
+.priceDetail span i{
+  text-decoration: line-through;
+}
+.courseItemBonus {
+  font-size: .11rem;
+  font-weight: 400;
+  width:100%;
+  border-top:.01rem solid #526666;
+  padding-top:.1rem;
+  margin-top: .17rem;
+}
+.courseItemBonus i{
+  color:#FF8B18;
+  border-radius: .03rem;
+  background-color: rgba(255,139,24,.14);
+  padding:.03rem .04rem;
+}
+.courseItemBonus span{
+  margin-left: .08rem;
+}
+.footer-box{
+  height:.56rem;
+  width:100%;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  z-index:1;
+  background: #fff;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.understandBtn{
+  width:90%;
+  height:.44rem;
+  line-height: .44rem;
+  border-radius: .1rem;
+  text-align: center;
+  color:#fff;
+  background:linear-gradient(155deg,#2CC8D7 0%,#3CD7C2 100%); 
+  background: -webkit-linear-gradient(155deg,#2CC8D7 0%,#3CD7C2 100%); 
+}
+.courseSettlement{
+  display: flex;
+  justify-content: space-between;
+  width:93.1%;
+}
+.courseSettlement-totalPrice{
+  font-size: .14rem;  
+}
+.courseSettlement-totalPrice .totalPrice{
+  color:#333333;
+  font-weight: 400;
+}
+.courseSettlement-totalPrice .totalPrice i{
+  color:#4B4B5B;
+  font-weight: 400;
+}
+.courseSettlement-totalPrice .totalPrice b{
+  color:#4B4B5B;
+  font-weight: 500;
+  font-size:.18rem;
+}
+.courseSettlement-totalPrice .totalPrice span{
+  color:#4B4B5B;
+  font-size: .14rem;
+}
+.courseSettlement-totalPrice .discountPrice{
+  color:#FF8B18;
+  font-size: .12rem;
+}
+.courseSettlement-totalPrice .discountPrice i{
+  font-size: .1rem;
+}
+.courseSettlement-totalPrice .discountPrice b{
+  color:#FF8B18;
+  font-weight: 500;
+  font-size: .14rem;
+}
+.courseSettlement-totalPrice .discountPrice span{
+  color:#FF8B18;
+  font-size: .12rem;
+}
+.courseSettlement-btns{
+  display: flex;
+  justify-content: space-between;
+  width:55%;
+  height:.44rem;
+  line-height: .44rem;
+  text-align: center;
+  color:#fff;
+}
+.settleAccountsBtn{
+  width:70%;
+  height: 100%;
+  background:#FF8B18;
+  border-radius:.1rem 0 0 .1rem;
+}
+.serviceBtn{
+  width:29%;
+  background:linear-gradient(155deg,#2CC8D7 0%,#3CD7C2 100%); 
+  background: -webkit-linear-gradient(155deg,#2CC8D7 0%,#3CD7C2 100%); 
+border-radius:0 .1rem .1rem 0;
+}
 .box {
   background: url("../images/activitiesDetail-product-bg.png") no-repeat;
   -webkit-background-size: 100%;
