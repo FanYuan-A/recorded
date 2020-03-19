@@ -1,0 +1,218 @@
+.red {
+  color: red;
+}
+
+.pt47 {
+  padding-top: .47rem;
+}
+
+.pt37 {
+  padding-top: .37rem;
+}
+
+.mb20 {
+  margin-bottom: .2rem;
+}
+
+.mb10 {
+  margin-bottom: .1rem;
+}
+
+.mt10 {
+  margin-top: .1rem;
+}
+
+.mint-cell-wrapper {
+  font-size: .14rem;
+}
+
+/* ios兼容 */
+.mint-field .mint-field-core {
+  display: block !important;
+}
+
+input:disabled, textarea:disabled {
+  -webkit-text-fill-color: #888;
+  -webkit-opacity: 1;
+  color: #888;
+  background: #ffffff;
+}
+
+input[placeholder] {
+  color: #888;
+}
+
+input:disabled, input[disabled] {
+  color: #888 !important;
+  opacity: 1;
+}
+
+/*小三角    <i class="mint-cell-allow-right"></i>  */
+.mint-cell-allow-right::after {
+  width: .08rem;
+  height: .08rem;
+}
+
+.mint-msgbox-message {
+  font-size: .15rem;
+  color: #333;
+}
+
+.mint-msgbox-btns {
+  height: .45rem;
+  line-height: .45rem;
+}
+
+.mint-msgbox-btns button {
+  font-size: .16rem;
+  color: #FD4545;
+}
+
+.mint-button {
+  height: .44rem;
+  line-height: .44rem;
+  font-size: .16rem;
+}
+
+.mint-header, .mint-button--primary {
+  background: #F15B5A;
+}
+
+.mint-header .mint-button {
+  margin-top: 0;
+}
+
+/*.mint-cell {*/
+/*height: .45rem;*/
+/*line-height: .45rem;*/
+/*}*/
+
+/*.mint-cell-wrapper {*/
+/*padding: 0px;*/
+/*font-size: .14rem;*/
+/*color: #333333;*/
+/*}*/
+
+/*.mint-cell-title {*/
+/*padding-left: .12rem;*/
+/*}*/
+
+/*.mint-cell-value {*/
+/*padding-right: .12rem;*/
+/*}*/
+
+/*箭头*/
+/*下箭头   <i class="arrow"></i>  */
+.arrow {
+  width: 0;
+  height: 0;
+  border: .15rem solid transparent;
+  border-top-color: orange;
+  position: absolute;
+  content: '';
+}
+
+.no-message {
+  margin: 35% auto;
+  display: block;
+  text-align: center;
+}
+
+/*ocr*/
+.ocr {
+  width: .28rem;
+  /*height: .2rem;*/
+  float: right;
+  position: relative;
+  overflow: hidden;
+}
+
+.ocr img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ocrfile {
+  opacity: 0;
+}
+
+/*条款*/
+.CLAUSE {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+.CLAUSE .header {
+  position: relative;
+  height: 44px;
+  -padding-top: 20px;
+  line-height: 44px;
+  font-size: 0.17rem;
+  color: #fff;
+  text-align: center;
+  background: #F15B5A;
+
+}
+
+.CLAUSE .head-back {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 44px;
+  height: 44px;
+  background: url('../img/back.png') no-repeat center center;
+  background-size: 9px 17px;
+}
+
+.CLAUSE .content {
+  padding: .15rem;
+  font-size: .14rem;
+  /*color: #3EABEE;*/
+  background: #ffffff;
+}
+
+/*.CLAUSE .content p {*/
+/*line-height: .2rem;*/
+/*margin-bottom: .15rem;*/
+/*}*/
+.CLAUSE .content h2 {
+  font-size: .18rem;
+  color: #292929;
+  text-align: center;
+  margin-bottom: .1rem;
+}
+
+.CLAUSE .content .TITLE {
+  font-size: .16rem;
+  color: #292929;
+  font-weight: 900;
+  line-height: .25rem;
+}
+.CLAUSE .content .TITLE.tac {
+  text-align: center;
+}
+.CLAUSE .content p b {
+  margin-right: .1rem;
+}
+.CLAUSE .content p {
+  font-size: .16rem;
+  text-indent: .20rem;
+  line-height: .25rem;
+  margin-bottom: .15rem;
+}
+.CLAUSE .content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.CLAUSE .content table tr td{
+  text-align: center;
+  padding: .05rem .1rem;
+}
