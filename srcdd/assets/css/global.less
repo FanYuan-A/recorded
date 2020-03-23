@@ -1,0 +1,185 @@
+//全局样式变量
+@color-primary: #FFB142; //主色调
+@color-minor: #0894EC; //次色调
+
+//全局字体颜色
+@color-text-base: #333333; //主要字体颜色 如正文信息
+@color-text-base-inverse: #FFFFFF;
+@color-text-minor: #999999; //
+@color-text-caption: #E25151;
+
+//背景色、边框色
+@color-bg-base: #F2F2F2; //主要背景色
+@color-bg-content: #FFFFFF; //内容背景色
+@color-border-base: #D8D8D8; //主要边框色
+@color-mask: #FFFFFF; //蒙层背景色
+
+/// Radius Size 主要用到的圆角尺寸
+@radius-primary: 5px;
+@radius-minor: 10px;
+
+/// Border Size
+@border-width-base: 1px;
+
+//字体尺寸
+@font-title-large: 32px;
+@font-body-large: 28px;
+@font-body-normal: 26px;
+@font-minor-large: 36px;
+@font-minor-normal: 24px;
+
+// @font-weight-light: 300;
+// @font-weight-normal: 400;
+// @font-weight-medium: 500;
+// @font-weight-semibold: 600;
+
+//字体
+@font-family-base: "PingFangSC-Regular", "Helvetica Neue", Helvetica, "Microsoft YaHei"; //常规字体
+// @font-family-minor: PingFangSC-Medium; //次要字体
+
+
+* {
+  font-family: @font-family-base;
+}
+
+
+#app {
+  font-family: @font-family-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+  font-size: @font-body-large;
+  background-color: @color-bg-content;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+//弹出层标题栏字体颜色
+/deep/.md-popup {
+  .md-popup-title-bar {
+    height: 90px;
+
+    .title-bar-right.md-popup-confirm {
+      color: @color-minor;
+      font-size: 30px;
+      font-family: @font-family-base;
+    }
+
+    .title-bar-left.md-popup-cancel {
+      font-size: 30px;
+      font-family: @font-family-base;
+    }
+  }
+}
+
+/deep/.md-picker {
+  .md-picker-column {
+    .md-picker-column-container {
+      .md-picker-column-list {
+        .md-picker-column-item {
+          .column-list {
+            .column-item {
+              color: @color-text-base;
+              font-size: @font-title-large  !important;
+            }
+
+            .column-item.active {
+              color: @color-minor;
+              font-size: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//列表选择器控件选中字体颜色
+/deep/.md-selector-container {
+  font-family: @font-family-base;
+
+  .md-cell-item.md-radio-item.is-selected {
+    .md-cell-item-content {
+      .md-cell-item-title {
+        color: @color-minor;
+      }
+    }
+
+    .md-cell-item-right {
+      .md-radio.is-checked {
+        .md-radio-icon {
+          color: @color-minor;
+        }
+      }
+    }
+  }
+}
+
+.md-field-item-content:before {
+   border-bottom: none;
+   height: 1px;
+   background-color: #ECECEC;
+   width: 0;
+   transform: none;
+   transform-origin: unset;
+   // transform: scaleY(.5) translateY(100%);
+   // transform-origin: 50% 100%;
+ }
+//.md-field-content > div:last-child > div:before {
+//  border-bottom: none;
+//  height: 1px;
+//  background-color: white!important;
+//  transform: none;
+//  transform-origin: unset;
+//  // transform: scaleY(.9) translateY(100%);
+//  // transform-origin: 90% 100%;
+//}
+
+
+// 修复选择控件样式错位问题
+/deep/.md-picker {
+  .md-picker-column-container {
+    ul.column-list {
+      padding: 0;
+      margin: 0 auto;
+      padding-top: 200px;
+    }
+  }
+}
+
+/deep/.md-switch {
+  height: 24px;
+  width: 67px;
+}
+
+/deep/.md-switch:before {
+  height: 24px;
+  width: 67px;
+}
+
+/deep/.md-switch:after {
+  top: -8px;
+  left: -4px;
+  height: 0.4rem;
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.15);
+}
+
+/deep/.md-switch.active:after {
+  transform: translateX(44px);
+}
+
+/deep/.md-switch:after {
+  left: -0.1rem;
+}
+/deep/.md-toast /deep/.md-popup /deep/.md-popup-mask {
+  background-color: rgba(37, 38, 45, .4);
+}
+/deep/.md-popup-mask{background-color: rgba(37,38,45,.4);}
+
+.md-dialog-btn:last-child {
+  color: @color-primary;
+}
+
+#jiaxin-mcs-fixed-btn {
+  display: none !important;
+}
