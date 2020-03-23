@@ -1,0 +1,41 @@
+#app {
+    width: 100vw;
+    height: 100vh;
+}
+
+#home-header {
+    width: 100%;
+    padding: 0 !important;
+    background: #8cc5ff;
+}
+
+#home-main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: white;
+    padding: 0px;
+}
+
+.login-body {
+    background: url('/img/login-background.jpg') no-repeat center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.login-container {
+    background: transparent;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 30vw;
+    height: 80vh;
+}
+
+.login-form {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+}
