@@ -1,0 +1,63 @@
+/*基本样式*/
+
+@import "./reset.scss";
+
+/*公共样式*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.vam {
+    vertical-align: middle;
+}
+
+.vat {
+    vertical-align: top;
+}
+
+.vab {
+    vertical-align: bottom;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
